@@ -3,7 +3,7 @@
 :root {
   --trans-time: 0.4s;
   --main-color: #888;
-  --block-color: #28292B;
+  --block-color: #28292b;
   --pink-color: #f14d86;
 }
 * {
@@ -78,7 +78,7 @@ header .container .box form input {
   background-color: var(--block-color);
   color: #fff;
   padding: 15px 20px 15px 33px;
-  font-size: 0.9rem ;
+  font-size: 0.9rem;
   transition: var(--trans-time);
 }
 header .container .box form input:hover,
@@ -90,7 +90,7 @@ header .container .box form i {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  color: var(--main-color)
+  color: var(--main-color);
 }
 header .container nav .icon_menu {
   display: none;
@@ -188,7 +188,7 @@ header .container nav ul li.profile img {
 div.b {
   padding: 20px;
   background-color: var(--block-color);
-  border-radius: 30px; 
+  border-radius: 30px;
 }
 .lading {
   background-image: url("../image/banner-bg.jpg");
@@ -204,23 +204,14 @@ div.b {
 }
 .lading .box {
   color: #fff;
-  width: 50%; 
-}
-@media (max-width: 767px) {
-  .lading {
-    padding: 0;
-  }
-  .lading .box {
-    width: 100%;
-    text-align: center;
-  }
+  width: 50%;
 }
 .lading .box p {
   font-size: 1.2rem;
   margin: 0;
 }
 .lading .box h2 {
-  font-size: 2rem; 
+  font-size: 2rem;
   text-transform: uppercase;
 }
 .lading .box h2 span {
@@ -237,10 +228,22 @@ div.b {
 .lading .box a:hover {
   background-color: #eb5388a1;
 }
+@media (max-width: 767px) {
+  .lading {
+    padding: 0;
+  }
+  .lading .box {
+    width: 100%;
+    text-align: center;
+  }
+  .lading .box h2 {
+    font-size: 1.2rem;
+  }
+}
 /* End lading Section */
 /* Start Most Popular Section */
 .most_popular {
-  background-color:#222;
+  background-color: #222;
   border-radius: 20px;
   padding: 20px;
   padding-bottom: 50px;
@@ -274,7 +277,7 @@ h2.title_section span {
   width: 100%;
   max-width: 100%;
   border-radius: 20px;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 .most_popular .parent .box .information div {
   display: flex;
@@ -316,10 +319,15 @@ h2.title_section span {
 .button_section:hover {
   background-color: #eb5388a1;
 }
+@media screen and (max-width: 767px) {
+  .button_section {
+    padding: 15px 20px;
+  }
+}
 /* End Most Popular Section */
 /* Start Donwloads Section */
 .donwloads {
-  background-color:#222;
+  background-color: #222;
   border-radius: 20px;
   padding: 20px;
   padding-bottom: 50px;
