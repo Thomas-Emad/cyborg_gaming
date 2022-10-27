@@ -1,0 +1,407 @@
+/* Start This Template [23/10/2022] */
+/* Start Global Code */
+:root {
+  --trans-time: 0.4s;
+  --main-color: #888;
+  --block-color: #28292B;
+  --pink-color: #f14d86;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #222;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Start Header */
+header {
+  position: relative;
+  margin-bottom: 10px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .box {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  align-items: center;
+}
+header .container .box .logo {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px 0;
+}
+header .container .box form {
+  position: relative;
+}
+header .container .box form input {
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--block-color);
+  color: #fff;
+  padding: 15px 20px 15px 33px;
+  font-size: 0.9rem ;
+  transition: var(--trans-time);
+}
+header .container .box form input:hover,
+header .container .box form input:focus {
+  padding: 15px 40px 15px 33px;
+}
+header .container .box form i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: var(--main-color)
+}
+header .container nav .icon_menu {
+  display: none;
+}
+header .container nav ul {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+header .container nav ul :nth-child(1) a {
+  color: var(--pink-color);
+}
+header .container nav ul li a {
+  color: var(--main-color);
+  transition: var(--trans-time);
+  font-size: 0.9rem;
+}
+header .container nav ul li a:hover {
+  color: var(--pink-color);
+}
+header .container nav ul li.profile {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: var(--block-color);
+  transition: var(--trans-time);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+header .container nav ul li.profile:hover {
+  background-color: var(--pink-color);
+}
+header .container nav ul li.profile:hover a {
+  color: #fff;
+}
+header .container nav ul li.profile img {
+  border-radius: 100%;
+  width: 30px;
+}
+@media (max-width: 780px) {
+  header {
+    background-color: #fff;
+  }
+  header .container .box .searsh {
+    display: none;
+  }
+  header .container nav .icon_menu {
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 50%;
+    transition: var(--trans-time);
+    cursor: pointer;
+  }
+  header .container nav .icon_menu:focus,
+  header .container nav .icon_menu:hover {
+    background-color: #eee;
+  }
+  header .container nav ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 15px 0;
+    border-top: 1px #222 solid;
+    transform: translateY(-500%);
+    transition: var(--trans-time);
+  }
+  header .container nav ul li:not(li.profile) {
+    width: 100%;
+  }
+  header .container nav ul li a {
+    color: #000;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  header .container nav ul li a:hover {
+    background-color: #eee;
+  }
+  header .container nav ul li.profile {
+    background-color: #222;
+    padding: 10px 40%;
+  }
+  header .container nav ul li.profile a {
+    color: #fff;
+    display: inline-block;
+  }
+}
+/* End Header */
+/* Start lading Section */
+div.b {
+  padding: 20px;
+  background-color: var(--block-color);
+  border-radius: 30px; 
+}
+.lading {
+  background-image: url("../image/banner-bg.jpg");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+}
+.lading .box {
+  color: #fff;
+  width: 50%; 
+}
+@media (max-width: 767px) {
+  .lading {
+    padding: 0;
+  }
+  .lading .box {
+    width: 100%;
+    text-align: center;
+  }
+}
+.lading .box p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.lading .box h2 {
+  font-size: 2rem; 
+  text-transform: uppercase;
+}
+.lading .box h2 span {
+  color: var(--pink-color);
+}
+.lading .box a {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: var(--pink-color);
+  transition: var(--trans-time);
+  border-radius: 50px;
+}
+.lading .box a:hover {
+  background-color: #eb5388a1;
+}
+/* End lading Section */
+/* Start Most Popular Section */
+.most_popular {
+  background-color:#222;
+  border-radius: 20px;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin: 40px 0;
+  position: relative;
+}
+h2.title_section {
+  color: var(--pink-color);
+  font-size: 1.7rem;
+}
+h2.title_section span {
+  color: #fff;
+  text-decoration: underline;
+}
+.most_popular .parent {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.most_popular .parent .box {
+  background-color: var(--block-color);
+  padding: 30px 10px;
+  border-radius: 20px;
+  transition: var(--trans-time);
+  cursor: pointer;
+}
+.most_popular .parent .box:hover {
+  background-color: var(--pink-color);
+}
+.most_popular .parent .box .image img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 5px
+}
+.most_popular .parent .box .information div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 0 0;
+}
+.most_popular .parent .box .information div .name_game {
+  color: #fff;
+  font-size: 1rem;
+}
+.most_popular .parent .box .information div span {
+  color: var(--main-color);
+  font-size: 0.8rem;
+}
+.most_popular .parent .box:hover .information div span {
+  color: #fff;
+}
+.most_popular .parent .box .information div .info {
+  color: #fff;
+}
+.most_popular .parent .box .information div .info .start_icon {
+  color: gold;
+}
+.most_popular .parent .box .information div .info .download_icon {
+  color: var(--pink-color);
+}
+.button_section {
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: var(--pink-color);
+  transition: var(--trans-time);
+  border-radius: 50px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button_section:hover {
+  background-color: #eb5388a1;
+}
+/* End Most Popular Section */
+/* Start Donwloads Section */
+.donwloads {
+  background-color:#222;
+  border-radius: 20px;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin: 40px 0;
+  position: relative;
+}
+.donwloads .parent .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.donwloads .parent .box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.5px;
+  width: 85%;
+  background-color: #555;
+}
+.donwloads .parent .box .title {
+  display: flex;
+  justify-content: space-between;
+  width: 22%;
+}
+@media (max-width: 767px) {
+  .donwloads .parent .box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .donwloads .parent .box .title {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.donwloads .parent .box .title img {
+  border-radius: 20px;
+}
+.donwloads .parent .box .info {
+  text-align: center;
+  color: #fff;
+}
+.donwloads .parent .box .info .small_text {
+  color: var(--main-color);
+  font-size: 0.8rem;
+}
+.donwloads .parent .box .donwload_button {
+  padding: 14px 33px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: solid 1px var(--main-color);
+  color: var(--main-color);
+  transition: var(--trans-time);
+}
+.donwloads .parent .box .donwload_button:hover {
+  border: solid 1px var(--pink-color);
+  color: var(--pink-color);
+}
+.donwloads .parent .box:nth-child(2) .donwload_button {
+  padding: 14px 33px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: solid 1px var(--pink-color);
+  color: var(--pink-color);
+  transition: var(--trans-time);
+}
+/* End Donwloads Section */
+/* Start Footer */
+footer {
+  text-align: center;
+  padding: 30px 0 10px;
+  background-color: transparent;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+footer .container p a {
+  color: var(--pink-color);
+}
+
+/* End Footer */
